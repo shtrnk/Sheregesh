@@ -1,0 +1,40 @@
+.about {
+    background-color: var(--bg-main-grey);
+    padding: 60px 10px 80px 10px;
+    text-align: center;
+    color: var(--color-main-black);
+}
+
+.about-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 42px 0;
+}
+
+.about-subtitle-ru,
+.about-subtitle-en {
+font-size: 18px;
+    font-weight: 500px;
+    margin: 0 0 15px 0;
+}
+
+.about-describtion-ru,
+.about-describtion-en {
+    font-size: 18px;
+    font-weight: 500px; 
+    margin: 15px 0 15px 0;
+    
+}
+
+@media (max-width: 480px) {
+    
+    .about-describtion-en,
+    .about-describtion-ru,
+    .about-subtitle-ru,
+    .about-subtitle-en { 
+        font-size: 14px;
+        }
+
+    .about-title {
+    font-size: 32px;
+    }}
