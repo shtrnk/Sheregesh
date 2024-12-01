@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
+    
+    <head>
+        <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,49 +18,90 @@
             <nav class="nav" aria-label="header navigation">
                 <ul class="nav-list" aria-label="hedder navigation list">
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to home">Home</a>
+                        <a href="#home" class="nav-link" aria-label="link to home">Home</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to about">about</a>
+                        <a href="#about" class="nav-link" aria-label="link to about">about</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to history">history</a>
+                        <a href="#history" class="nav-link" aria-label="link to history">history</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to portfolio">portfolio</a>
+                        <a href="#facts" class="nav-link" aria-label="link to facts">facts</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link" aria-label="link to contact">contact</a>
+                        <a href="#links" class="nav-link" aria-label="link to links">links</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    
+    
+    <div class="mobile-navigation" aria-label="mobile navigation">
+        <label for="toggler-id" aria-label="open-close mobile-navigation">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="assets/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+        
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+            
+        <nav class="mobile-navigation-menu" aria-label="mobile navigation">
+                <ul class="mobile-navigation-list" aria-label="mobile-navigation list">
+                    <li>
+                        <a href="#home" class="mobile-navigation-link" aria-label="link to home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="mobile-navigation-link" aria-label="link to about">about</a>
+                    </li>
+                    <li>
+                        <a href="#history" class="mobile-navigation-link" aria-label="link to history">history</a>
+                    </li>
+                    <li>
+                        <a href="#facts" class="mobile-navigation-link" aria-label="link to facts">facts</a>
+                    </li>
+                    <li>
+                        <a href="#links" class="mobile-navigation-link" aria-label="link to links">links</a>
+                    </li>
+                </ul>
+
+                 <label for="toggler-id" class="mobile-navigation-close" aria-label="open-close mobile-navigation">
+                    <svg class="mobile-navigation-cross" aria-label="cross-icon">
+                        <use href="assets/sprites.svg#cross-icon"></use>
+                    </svg>   
+                </label> 
+        </nav>
+    </div>
+
+    
     <main aria-label="main">
         <section class="home" aria-label="home">
-                <div class="container">
-                    <h1 class="home-title" aria-label="title">Ski Resort Sheregesh</h1>
-                    <p class="home-description" aria-label="description">Шерегеш - посёлок в Таштагольском районе Кемеровской области</p>
-                    <img src="assets/webp/home.webp" alt="photo home" class="home-img">
-                </div>
+            <div class="container" id="home">
+                <h1 class="home-title" aria-label="title">Ski Resort Sheregesh</h1>
+                <p class="home-description" aria-label="description">Шерегеш - посёлок в Таштагольском районе Кемеровской области</p>
+                <img src="/assets/webp/home.webp" alt="photo home" class="home-img">
+            </div>
         </section>
+        
 
         <section class="about" aria-label="about section">     
-            <div class="container">
+            <div class="container" id="about">
                 <h2 class="about-title" aria-label="about title">About</h2>
                 <h3 class="about-subtitle-ru" aria-label="about subtatle ru">Гора Зеленая - гора с горнолыжным курортом, склонами разной сложности, местами для катания на снегоходах, подъемниками и летними тропами.</h3>
                 <p class="about-describtion-ru" aria-label="about describtion ru">Шерегеш — посёлок в Таштагольском районе Кемеровской области — Кузбасса у подножия горы Зелёная. Известен своим горнолыжным курортом. Ведущее промышленное предприятие — Шерегешский рудник — поставляет железную руду на металлургические комбинаты Новокузнецка.</p>
 
                 <hr class="divider" aria-label="divider">
-
+                
                 <h3 class="about-subtitle-en" aria-label="about subtatle en">Mount Green is a mountain with a ski resort, slopes of varying difficulty, places for snowmobiling, ski lifts and summer trails.</h3>
                 <p class="about-describtion-en" aria-label="about describtion en">Sheregesh is a village in the Tashtagol district of the Kemerovo region - Kuzbass at the foot of Mount Zelenaya. It is famous for its ski resort. The leading industrial enterprise - Sheregesh mine - supplies iron ore to the metallurgical plants of Novokuznetsk.</p>
             </div>
         </section>
 
+
         <section class="history-section" aria-label="history section">
-                <div class="container">
-                    <h2 class="history-title" aria-label="history">History</h1>
+                <div class="container" id="history">
+                    <h2 class="history-title" aria-label="history">History</h2>
                         <img src="assets/webp/tree.webp" alt="photo" class="history-photo">
                         <p class="history-destribtion-ru" aria-label="history ru">Как появился Шерегеш? В 1931 году приехали русские геологи. И с 1931 года началась разведка. Когда геологи стали называть поселок фамилией первооткрывателей, то изменили нашу фамилию. Фамилия была Шарагашев, а геологи, по их согласию, назвали поселок – Шерегеш, а фамилию – Шерегешев, так как лучше звучит по-русски».</p>
 
@@ -69,9 +110,53 @@
                         <p class="history-destribtion-en" aria-label="historu en">How did Sheregesh appear? In 1931, Russian geologists arrived. And exploration began in 1931. When geologists began to call the settlement by the name of the discoverers, they changed our last name. The last name was Sharagashev, and the geologists, by their agreement, named the settlement Sheregesh, and the last name Sheregeshev, since it sounds better in Russian"</p>
                 </div>
         </section>
-    </main>
-    <footer aria-label="footer">
 
-    </footer>   
+
+        <section class="interestsing-facts" aria-label="interesting facts" id="facts-id">
+            <div class="container" id="facts">
+                <h2 class="facts-title" aria-label="interesting facts title">Interesting facts</h2>           
+                <img src="assets/webp/two.webp" alt="photo" class="facts-photo">
+                <p class="facts-description-ru" aria-label="description facts ru">
+                            <ol class="list-ru">
+                                <li>За зимний сезон 2022—2023 гг. в Шерегеше побывало около 2,3 млн россиян.</li>
+                                <li>11 марта 2017 года в Шерегеше в секторе Е прошел зимний этап всероссийского забега с препятствиями «Гонка Героев».</li>
+                                <li>Шерегеш занимает 4-е место по популярности отдыха на горнолыжных курортах в праздничные выходные на День защитника Отечества.</li>
+                                <li>Территория курорта входит СЭЗ «Горная Шория»</li>
+                            </ol>
+                        </p>
+
+                        <hr class="divider" aria-label="divider">
+                        
+                        <p class="facts-description-en" aria-label="description facts-en">
+                            <ol class="list-en">
+                                <li>During the winter season of 2022-2023, about 2.3 million Russians visited Sheregesh.</li>
+                                <li>On March 11, 2017, the winter stage of the All-Russian "Race of Heroes" with attractions was held in Sheregesh.</li>
+                                <li>Sheregesh ranks 4th in popularity of vacations at resorts on the holiday weekend on Defender of the Fatherland Day.</li>
+                                <li>The territory of the resort is part of the "Gornaya Shoria" SEZ</li>
+                            </ol>
+                        </p>
+            </div>
+        </section>
+
+
+        <section class="links">
+            <div class="container" id="links">
+                <h2 class="links-title" aria-label="interesting links">Links</h2>
+                <img src="assets/webp/five.webp" alt="photo links" class="links-photo">
+                    <div class="gesh"><a href="http://dirsheregesh.ru">Официальный сайт дирекции курорта</a></div>
+                    <div class="gesh"><a href="http://gesh.ru">Горнолыжный курорт Шерегеш</a></div>
+                    <div class="gesh"><a href="http://egegesh.ru">Веб-камеры Шерегеш</a></div>
+                    <div class="gesh"><a href="http://egegesh.ru/weather">Погода в Шерегеше</a></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" aria-label="footer">
+            <div class="container">
+                <h5 class="text"></h5>
+            </div>
+    </footer> 
+
 </body>
 </html>
